@@ -25,7 +25,7 @@ Follow these steps to **run the project locally**:
 
 ### 1️⃣ Clone the Repository
 ```sh
-git clone https://github.com/Sandeepmopidevi/Eye-Disease-Detection.git
+git clone https://github.com/rukshanasafrin/Eye-Disease-Detection.git
 cd Eye-Disease-Detection
 ```
 
