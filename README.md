@@ -15,7 +15,7 @@ An AI-powered **Eye Disease Detection** web application that allows users to **u
 ## 🛠️ Technologies Used
 - **Frontend**: HTML, CSS (with animations & responsive design)
 - **Backend**: Flask (Python)
-- **Machine Learning**: TensorFlow/Keras (for disease prediction)
+- **Machine Learning**: TensorFlow/Keras, Numpy, Grad-CAM for explainable AI
 - **Deployment**: Flask server & GitHub (for hosting)
 
 ---
@@ -25,8 +25,8 @@ Follow these steps to **run the project locally**:
 
 ### 1️⃣ Clone the Repository
 ```sh
-git clone https://github.com/rukshanasafrin/Eye-Disease-Detection.git
-cd Eye-Disease-Detection
+git clone https://github.com/rukshanasafrin/Eye-Disease-Detection-System.git
+cd Eye-Disease-Detection-System
 ```
 
 ### 2️⃣ Install Dependencies
@@ -45,14 +45,22 @@ The app will start on **http://127.0.0.1:5000/**.
 
 ## 🖼️ Project Structure
 ```
-📂 Eye-Disease-Detection/
-├── 📁 static/           # CSS, images
-├── 📁 templates/        # HTML files
-├── 📁 model/            # Trained ML model
-├── app.py              # Flask backend
-├── model_training.py   # Train Model and save Model
-├── requirements.txt    # Dependencies
-└── README.md           # Project documentation
+Eye-Disease-Detection-System/
+│── app.py                  # Flask application entry point
+│── preprocess.py           # Image preprocessing logic
+│── gradcam.py              # Grad-CAM visualization generation
+│── requirements.txt        # Project dependencies
+│── README.md               # Project documentation
+│
+├── static/
+│   ├── styles.css          # Application styling
+│   ├── images.jpeg         # UI / sample image asset
+│   ├── preprocessed.jpg    # Example preprocessed image output
+│   └── gradcam.jpg         # Example Grad-CAM output
+│
+└── templates/
+    ├── index.html          # Upload page
+    └── result.html         # Prediction result page
 ```
 
 ---
@@ -64,9 +72,8 @@ The app will start on **http://127.0.0.1:5000/**.
 
 ---
 
+
 ## 🤝 Contributing
 Pull requests are welcome! Feel free to fork the repository and make improvements.
 
 ---
-
-### 🌟 **Star this Repo if you found it useful!** ⭐
